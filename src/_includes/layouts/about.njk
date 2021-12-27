@@ -1,0 +1,27 @@
+{% extends "layouts/base.njk" %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+{% set peopleItems = collections.people %}
+
+{% block content %}
+  {% include "partials/page-header.njk" %}
+  <article class="about">
+    <div class="container">
+      <div class="about__main">
+        <h2>Un poco de información sobre mí.</h2>
+        <div class="about__flex sec-1">
+          <img src="/img/misc/profile-pic.jpg" alt="" class="profile-pic">
+          <p>Desde pequeño he tenido interés por la tecnología y cómo funcionan las cosas. Como muchos niños y adolescentes de mi generación pasé mucho tiempo jugando video juegos (principalmente en Play Station 1 y Play Station 2, más las consolas portátiles de Nintendo) y siempre me fascinaban las visuales de los juegos que jugaba, desde una vista aerea de la ciudad de Midgard hasta los menu de los juegos de Pokemon. Tabién me fascinaba saber cómo se producían aquellas visuales y gráficas, cómo funcionaba el aparato que hacía y hace correr aquellos juegos. Claro, no voy a negar que dañé ciertos aparatos en casa al abrirlos y ver cómo eran por dentro.</p>
+        </div>
+        <div class="about__flex sec-2">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos a enim perspiciatis vitae eveniet aliquam laudantium atque unde sit repudiandae! Voluptatum facilis iste explicabo aperiam, consectetur totam qui! Ratione pariatur eveniet a quidem veritatis autem voluptate magni officiis. Accusantium doloribus nesciunt rem assumenda quas facere sed maxime quos molestiae cumque necessitatibus pariatur qui nemo quae corporis ipsum sint nam praesentium fugiat magni, non vero. Voluptas, a exercitationem, laborum laboriosam vero animi rem doloribus qui reiciendis quasi numquam velit molestias modi minima odio labore fugit ullam odit facilis magni, delectus consequuntur consequatur excepturi. Officiis similique nisi est incidunt id culpa earum.</p>
+          <img src="/img/misc/profile-pic.jpg" alt="tools-picture">
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  {% include "partials/cta.njk" %}
+{% endblock %}

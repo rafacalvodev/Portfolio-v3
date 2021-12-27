@@ -1,0 +1,40 @@
+{% extends "layouts/base.njk" %}
+
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+
+{% block content %}
+  {% include "partials/page-header.njk" %}
+  <article class="services">
+    <div class="container flow">
+      <ul class="services__grid">
+        <li>
+          <h3>Servicio 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore deleniti eligendi laboriosam nemo! Accusamus!</p>
+        </li>
+        <li>
+          <h3>Servicio 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae exercitationem dignissimos corporis laudantium fugiat veritatis.</p>
+        </li>
+        <li>
+          <h3>Servicio 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam earum magni cupiditate debitis adipisci saepe.</p>
+        </li>
+        <li>
+          <h3>Servicio 4</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero, a quasi blanditiis at eaque.</p>
+        </li>
+        <li>
+          <h3>Servicio 5</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sed hic quidem dignissimos, esse quia.</p>
+        </li>
+        <li>
+          <h3>Servicio 6</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et inventore perferendis molestiae deserunt? Placeat, hic.</p>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+  {% include "partials/cta.njk" %}
+{% endblock %}

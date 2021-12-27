@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "text": "Inicio",
+      "url": "/"
+    },
+    {
+      "text": "Sobre Mí",
+      "url": "/sobre-mi/"
+    },
+    {
+      "text": "Proyectos",
+      "url": "/proyectos/"
+    },
+    {
+      "text": "Blog",
+      "url": "/blog/"
+    },
+    {
+      "text": "Servicios",
+      "url": "/servicios/"
+    },
+    {
+      "text": "Contacto",
+      "url": "/contacto/"
+    }
+  ]
+}

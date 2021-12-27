@@ -1,0 +1,18 @@
+<div class="flow posts" id="posts-list">
+  {% if postListHeadline %}
+    <h2 class="[ headline ] [ measure-micro ]" data-highlight="primary">
+      {{ postListHeadline }}
+    </h2>
+  {% endif %}
+  <div>
+    <ul class="[ post-list ] [ flow ]" role="list">
+      {% for item in postListItems %}
+        <li class="[ post-list__item ] [ leading-tight measure-long ]">
+          <a href="{{ item.url }}" class="post-list__link">{{ item.data.title }}</a>
+
+          {# <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time> #}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
