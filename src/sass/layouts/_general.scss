@@ -1,0 +1,14 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--auto-grid-min-size, 16rem), 1fr)
+  );
+  grid-gap: clamp(2.67rem, 2.07rem + 3vw, 4.21rem)
+    clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+}

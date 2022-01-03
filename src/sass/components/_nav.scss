@@ -1,0 +1,17 @@
+.site-header {
+  padding: clamp(1.09rem, 1rem + 0.47vw, 1.33rem) 0;
+
+  &__inner {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--font-size-900);
+  }
+}
+
+.nav {
+  &__list {
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+  }
+}

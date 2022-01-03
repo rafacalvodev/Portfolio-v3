@@ -1,0 +1,98 @@
+@use '../abstracts' as *;
+
+* {
+  font-variation-settings: 'wght' var(--font-weight, 375),
+    'wdth' var(--font-width, 80);
+}
+
+body {
+  font-family: 'ReadexPro', sans-serif;
+  font-size: var(--font-size-400);
+}
+
+h1,
+h2 {
+  font-family: 'Alegreya', serif;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  --font-weight: 700;
+  --font-width: 80;
+  font-weight: normal;
+  font-stretch: 100%;
+  line-height: 1.1;
+}
+
+h1 {
+  --font-weight: 800;
+  max-width: 22ch;
+  //letter-spacing: 0.0625em;
+}
+
+.title {
+  font-size: clamp(var(--font-size-600), calc(1rem + 5vw), 5rem);
+}
+
+.article-snippet-title {
+  --font-weight: 600;
+}
+
+time + p {
+  font-size: 1.25em;
+  margin: 2em 0 1em !important;
+}
+
+// This is setting the font-sizes
+// based on the ones in the abstract
+// folder, go there to make updates
+
+h1,
+.h1 {
+  font-size: --font-size-800;
+}
+
+h2,
+.h2 {
+  --flow-spacer: 1.5em;
+  font-size: --font-size-700;
+}
+h3,
+.h3 {
+  --flow-spacer: 1.5em;
+  font-size: --font-size-600;
+}
+
+h4,
+.h4 {
+  font-size: --font-size-500;
+}
+
+small,
+.text-small {
+  font-size: var(--font-size-300);
+}
+
+strong {
+  --font-weight: 500;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+p:not([class]),
+ul:not([class]),
+li:not([class]) {
+  max-width: 60ch;
+}

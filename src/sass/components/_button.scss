@@ -1,0 +1,34 @@
+.button {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  border-radius: 0.5em 0.1em 0.5em 0.1em;
+  border: 2px solid var(--color-text);
+  cursor: pointer;
+  // font: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+  line-height: 1;
+  letter-spacing: 0.05ch;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  color: var(--color-bg);
+
+  &:hover {
+    background-color: var(--color-bg);
+    border: 2px solid var(--color-text);
+    color: var(--color-text);
+  }
+}
+
+.btn-secondary {
+  background-color: var(--color-bg);
+}
