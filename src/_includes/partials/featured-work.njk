@@ -1,32 +1,33 @@
-<article class="featured-work" id="work-section">
+<article class="home-section featured-work" id="work-section">
   <div class="container flow">
-    <div class="[ featured-work__inner ] [ flow ]">
-      <div class="[ featured-work__intro ] [ flow flow-space-300 ]">
-        <h2
-          class="[ featured-work__heading ] [ headline ] [ color-quinary-shade lg:measure-micro ]"
+    <header>
+      <h2
+          class="home-section__title"
           data-highlight="dark">
-          {{ featuredWork.title }}
-        </h2>
-        <p class="[ featured-work__summary ] [ measure-compact ]">
-          {{ featuredWork.summary }}
-        </p>
-      </div>
+        {{ featuredWork.title }}
+      </h2>
+      <p class="home-section__summary">
+        {{ featuredWork.summary }}
+      </p>
+    </header>
+    <ul role="list" class="featured-work__grid grid">
       {% for item in collections.featuredWork %}
-        <a
+        <li>
+          <a
         href="{{ item.url }}"
         aria-label="See {{ item.data.title }}"
-        class="[ featured-work__item ] [ frame ]"
+        class="featured-work__item frame"
         data-frame="quaternary">
-          <img
+            <img
           src="{{ item.data.hero.image }}"
           alt="{{ item.data.hero.imageAlt }}"
           loading="lazy"
           class="radius"/>
-        </a>
+          </a>
+        </li>
       {% endfor %}
-    </div>
-    <div class="[ featured-work__action ] [ flow-space-700 ]">
-      <a href="/proyectos/" class="button">See more work</a>
-    </div>
+    </ul>
+
+    <a href="/proyectos/" class="home__button button">See more work</a>
   </div>
 </article>

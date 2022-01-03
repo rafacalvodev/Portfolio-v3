@@ -18,9 +18,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(rssPlugin);
 
 
-  eleventyConfig.addWatchTarget("./src/sass/");
+  eleventyConfig.addWatchTarget("./src/sass");
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy("./src/js");
+  eleventyConfig.addPassthroughCopy("./src/fonts");
+
 
   // Returns work items, sorted by display order
   eleventyConfig.addCollection('work', collection => {

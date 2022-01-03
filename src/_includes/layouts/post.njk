@@ -21,20 +21,20 @@
 {% endset %}
 
 {% block content %}
-  <article>
-    {% include "partials/page-header.njk" %}
+  {% include "partials/page-header.njk" %}
 
-    <div class="[ page-content ] [ flow wrapper ] [ flow-space-700 gap-top-700 ]">
+  <div class="[ page-content ] [ flow wrapper ] [ flow-space-700 gap-top-700 ]">
+    <article>
       {{ content | safe }}
     </div>
-    {% if recommendedPosts %}
-      <footer class="recommended-posts">
-        {% set postListItems = recommendedPosts %}
-        {% set postListHeadline = 'Más del bog' %}
-        {% include "partials/post-list.njk" %}
-      </footer>
-    {% endif %}
   </article>
+  {% if recommendedPosts %}
+    <footer class="recommended-posts">
+      {% set postListItems = recommendedPosts %}
+      {% set postListHeadline = 'Más del bog' %}
+      {% include "partials/post-list.njk" %}
+    </footer>
+  {% endif %}
 
   {% include "partials/cta.njk" %}
 {% endblock %}

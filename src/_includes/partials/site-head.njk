@@ -1,12 +1,12 @@
-<a href="#main-content" id="skiplink" tabindex="0" class="skip-link">Omitir e ir al contenido principal</a>
-<header role="banner" class="site-header">
-  <div class="wrapper">
-    <div class="site-header__inner">
+<a href="#main-content" id="skiplink" tabindex="0" class="skip-link screen-reader-text">Omitir e ir al contenido principal</a>
+<div class="container">
+  <header role="banner" class="site-header">
+    <div class="site-header__inner flex">
       <a href="/" aria-label="{{ site.name }} - Inicio" class="site-header__brand">
         {% include "partials/logo.svg" %}
       </a>
       <nav class="nav site-header__nav" aria-label="Primary">
-        <ul class="nav__list" role="list">
+        <ul class="nav__list flex" role="list">
           {% for item in navigation.items %}
             <li>
               <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
@@ -15,5 +15,5 @@
         </ul>
       </nav>
     </div>
-  </div>
-</header>
+  </header>
+</div>
