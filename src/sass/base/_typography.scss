@@ -5,6 +5,10 @@
     'wdth' var(--font-width, 80);
 }
 
+:any-link {
+  cursor: pointer;
+}
+
 body {
   font-family: 'ReadexPro', sans-serif;
   font-size: var(--font-size-400);
@@ -88,6 +92,12 @@ a {
   &:hover,
   &:focus {
     text-decoration: none;
+  }
+
+  &:focus,
+  &:active {
+    outline: max(1px, 0.15em) dashed currentColor;
+    outline-offset: 0.25em;
   }
 }
 

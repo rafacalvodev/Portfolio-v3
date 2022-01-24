@@ -32,5 +32,7 @@ gallery:
     user-friendly information'
     image: '/img/work/outgoings-gallery-3.jpg'
 link: 'https://creditrestructuringsolutions.com/'
+type: 'Sitio Web'
+tech: ['HTML', 'CSS']
 layout: "layouts/work-item.njk"
 ---

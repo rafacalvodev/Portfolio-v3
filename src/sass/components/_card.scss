@@ -1,0 +1,24 @@
+.card {
+  padding: 1em;
+  background-color: var(--color-secondary);
+  border-radius: 0.6em 0.15em 0.6em 0.15em;
+
+  &__title {
+    margin-top: 1.25rem;
+  }
+
+  &__title:hover {
+    text-decoration: underline;
+    // text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+  }
+
+  .tag {
+    display: inline-block;
+    border-radius: 0.5em 0.1em 0.5em 0.1em;
+    padding: 0.25em 0.5em;
+    margin-top: 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+  }
+}

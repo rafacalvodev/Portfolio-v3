@@ -1,6 +1,8 @@
 .flex {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  gap: 0 clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
 }
 
 .grid {

@@ -34,6 +34,6 @@ gallery:
     summary: 'We made the the stunning photography sit center stage
     because let’s be honest: that’s what you all came for.'
     image: '/img/work/behind-the-scenes-gallery-3.jpg'
-team: [1, 4, 6]
+type: 'Sitio Web'
 layout: "layouts/work-item.njk"
 ---

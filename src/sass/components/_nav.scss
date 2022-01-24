@@ -1,5 +1,6 @@
 .site-header {
   padding: clamp(1.09rem, 1rem + 0.47vw, 1.33rem) 0;
+  // font-size: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
 
   &__inner {
     align-items: center;
@@ -13,5 +14,20 @@
     align-items: center;
     justify-content: space-between;
     gap: 0 clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+  }
+
+  li {
+    margin: 0.15rem 0.5rem;
+  }
+
+  a {
+    --font-weight: 500;
+    // font-weight: var(--font-weight);
+  }
+
+  a:hover {
+    text-decoration: underline;
+    // text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
   }
 }

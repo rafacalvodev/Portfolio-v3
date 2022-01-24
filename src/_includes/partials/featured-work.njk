@@ -1,6 +1,6 @@
 <article class="home-section featured-work" id="work-section">
   <div class="container flow">
-    <header>
+    <header class="home-section__header">
       <h2
           class="home-section__title"
           data-highlight="dark">
@@ -13,17 +13,24 @@
     <ul role="list" class="featured-work__grid grid">
       {% for item in collections.featuredWork %}
         <li>
-          <a
-        href="{{ item.url }}"
-        aria-label="See {{ item.data.title }}"
-        class="featured-work__item frame"
-        data-frame="quaternary">
-            <img
-          src="{{ item.data.hero.image }}"
-          alt="{{ item.data.hero.imageAlt }}"
-          loading="lazy"
-          class="radius"/>
-          </a>
+          <article class="card">
+            <a
+              href="{{ item.url }}"
+              aria-label="See {{ item.data.title }}"
+              class="featured-work__item frame"
+              data-frame="quaternary">
+              <img
+              src="{{ item.data.hero.image }}"
+              alt="{{ item.data.hero.imageAlt }}"
+              loading="lazy"
+              class="card__image"/>
+              <h3 class="card__title">{{ item.data.title }}</h3>
+              <span class="tag">{{ item.data.type }}</span>
+              {# <ul>
+                <li>{{ item.data.tech }}</li>
+              </ul> #}
+            </a>
+          </article>
         </li>
       {% endfor %}
     </ul>

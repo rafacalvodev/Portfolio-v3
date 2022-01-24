@@ -33,6 +33,6 @@ gallery:
     summary: 'Using charts we help communicate the information that
     means the most.'
     image: '/img/work/brunch-and-brew-gallery-3.jpg'
-team: [2, 5, 4]
+type: 'Blog / Sitio Web'
 layout: "layouts/work-item.njk"
 ---
